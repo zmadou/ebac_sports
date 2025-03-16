@@ -29,14 +29,14 @@ function App() {
     fetch('https://fake-api-tau.vercel.app/api/ebac_sports')
       .then((res) => res.json())
       .then((res) => {
-        console.log('Produtos carregados:', res) // 🛠 Debug do fetch
+        console.log('Produtos carregados:', res) //Debug
         setProdutos(res)
       })
       .catch((err) => console.error('Erro ao buscar produtos:', err))
   }, [])
 
-  console.log('Favoritos do Redux:', favoritos) // 🛠 Debug do Redux
-  console.log('Carrinho do Redux:', carrinho) // 🛠 Debug do Redux
+  console.log('Favoritos do Redux:', favoritos) // Debug
+  console.log('Carrinho do Redux:', carrinho) // Debug
 
   function adicionarAoCarrinho(produto: Produto) {
     dispatch(adicionar(produto))

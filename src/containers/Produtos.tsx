@@ -26,8 +26,8 @@ const ProdutosComponent = ({
           key={produto.id}
           produto={produto}
           estaNosFavoritos={produtoEstaNosFavoritos(produto)}
-          favoritar={() => favoritar(produto)} // ✅ Agora reconhecido
-          adicionarAoCarrinho={() => adicionarAoCarrinho(produto)} // ✅ Agora reconhecido
+          favoritar={() => favoritar(produto)}
+          adicionarAoCarrinho={() => adicionarAoCarrinho(produto)}
         />
       ))}
     </S.Produtos>
